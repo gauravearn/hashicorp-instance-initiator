@@ -1,5 +1,5 @@
 # shell_hashicorp
-A shell invoker to make your HCL hashicorp programming easy and to write the AWS init files easy and to deploy them on the cluster integration. simply provide the instance name and the routing cluster and the deployment zone mode and it will make the hashicopr deployment variable declaration and the invokation file. 
+A shell invoker to make your HCL hashicorp programming easy and to write the init files easy for any instance and to deploy them on the cluster integration. simply provide the instance name and the routing cluster and the deployment zone mode and it will make the hashicopr deployment variable declaration and the invokation file. 
 
 Github:https://github.com/sablokgaurav \
 ORCID: https://orcid.org/0000-0002-4157-9405 \
