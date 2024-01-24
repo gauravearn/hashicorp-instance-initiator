@@ -48,9 +48,9 @@ for i in ${interfacelink[*]}; do
 done
 ```
 
-Gaurav Sablok,
-Academic Staff Member,
-Bioinformatics,
-Institute for Biochemistry and Biology,
-University of Potsdam,
+Gaurav Sablok, \
+Academic Staff Member, \
+Bioinformatics,\
+Institute for Biochemistry and Biology, \
+University of Potsdam, \
 Potsdam,Germany
