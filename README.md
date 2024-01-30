@@ -11,6 +11,9 @@ make any number of the hashicorp terraform instance either by directory providin
 read -r -p "please provide the link region:" region
 read -r -p "please provide the number of the networks ipinterface:" ipinterface
 read -r -p "please provide the provider:" provider
+read -r -p "please provide the instance name:" name
+read -r -p "please provide the ami:" ami
+read -r -p "please provide the instance name:" instance
 if [[ ${interface} == "ipaddress" ]]; then
     count=0
     interfacelink=()
@@ -25,7 +28,11 @@ if [[ ${interface} == "ipaddress" ]]; then
      profile =  "${i}"
      region  = "${region}"
 }"
-    done
+       echo "aws_instance "${name}" {
+      ami = "${ami}"
+      instance_type = "${instance}"
+       }"
+done
 elif [[ ${interface} = "file" ]]; then
     read -r -p "please provide the file name for the interface:" filename
     read -r -p "please provide the region for the instance creation:" region
@@ -45,8 +52,13 @@ for i in ${interfacelink[*]}; do
      profile =  "${i}"
      region  = "${region}"
 }"
+    echo "aws_instance "${name}" {
+      ami = "${ami}"
+      instance_type = "${instance}"
+       }"
 done
 ```
+# added a specific code for the complete aws deployment terraform creator. added the instance name and the ami support for the same. 
 
 Gaurav Sablok, \
 Academic Staff Member, \
