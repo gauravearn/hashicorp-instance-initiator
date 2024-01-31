@@ -58,7 +58,7 @@ for i in ${interfacelink[*]}; do
        }"
 done
 ```
-# added a specific code for the complete aws deployment terraform creator. added the instance name and the ami support for the same. 
+2024-1-30: added a specific code for the complete aws deployment with the instance name and the ami support. 
 
 Gaurav Sablok, \
 Academic Staff Member, \
